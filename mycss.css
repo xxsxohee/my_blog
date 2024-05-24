@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+header {
+    color: #000000;
+    margin: 0px;
+    text-align: center;
+    padding: 5px;
+}
+h1 {
+    margin: 0px;
+}
+section#main{
+    background-color: plum;
+    float: right;
+    width: 70%;
+    height: 200px;
+}
+nav{background-color: pink;
+    float: left;
+    width: 30%;
+    height: 200px;
+}
+footer{background-color: powderblue;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 0px 0px 0px;
+    font-size: 90%;
+    clear: both;
+}
+
+div {
+
+    width: 100px; 
+    height: 100px; 
+    background-color: red;
+    position: relative;
+    animation: 2s myanim;
+    animation-iteration-count: 10;
+}
+
+@keyframes myanim {
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: red; left: 100px; top: 0px;}
+    50% {background-color: yellow; left: 200px; top: 0px;}
+    75% {background-color: blue; left: 100px; top: 0px;}
+    100% {background-color: blue; left: 0px; top: 0px;}
+}
+@media screen and (max-width: 480px) {
+    section#main, nav {
+        width: 100%;
+    }
+}
